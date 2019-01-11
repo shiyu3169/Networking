@@ -11,3 +11,6 @@ The biggest challenge is figuring out Python and Regex. Python is not my base la
 The main tests is running the program to see if the secret flags are returned. Other than that, I did a few unittests to
 test out the methods which handle Regex. Those methods which handle TCP connections are not tested, as such tests are
 beyond unit tests.
+
+## Run
+Use Python3 to execute client file
