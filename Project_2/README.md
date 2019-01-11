@@ -1,10 +1,10 @@
-Webcrawler
-Team Members: Zhongxi Wang, Shiyu Wang
+# Webcrawler
+## Team Members: Zhongxi Wang, Shiyu Wang
 
 This project is intended to implement a web crawler that uses HTTP protocol to 5 secret flag data
 hidden in a fake social networking website.
 
-Approach
+## Approach
 Our approach was to firstly come out the structure of the project and then build from bottom to top.
 Firstly we build a pair of message handler, "ClientMessage.py" and "ServerMessage.py"
 to handle the messages sending from client to server and the one responded from server.
@@ -13,7 +13,7 @@ In order to combine them, we made "MyCurl.py" to combine and communicate them to
 After getting data from server by HTTP protocol, the top level was to
 find the links and flags in the responded message
 
-Challenge
+## Challenge
 The first challenge for us was to make a blueprint of this project,
 so we spent much time to understand and think about
 how many files, class and functions we need to make the project running.
@@ -23,7 +23,7 @@ The final challenge was to handle HTTP status codes. We spent some time to under
 Test Since we built our project from bottom to top, we tested the HTTP protocol working firstly.
 Then starting to handle parsing the response from server.
 
-Work Separation
+## Work Separation
 In order to improving our coding quality, efficiency and fully understand the project,
 we worked together by peer coding. When Zhongxi write the "ClientMessage.py" and "CookieJar.py",
 Shiyu was sitting behind him to read and check. Then Shiyu start writting "ServerMessage.py",
