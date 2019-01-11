@@ -55,8 +55,3 @@ generating a http page is improved from 0.5s to 0.004s or less.
 ## Future Work
 In the future, we would like to improve maping IPs to nearby replica servers based on both geolocation and active measurements.
 
-## Work Seperation
-We separate our work into DNS and HTTP.
-Zhongxi is working on DNS part as well as CDN functions like maping IPs to nearby replica servers.
-Also Zhongxi finishes deploy|run|stop CDN scripts
-Shiyu is responsible for HTTP part and cache handling
