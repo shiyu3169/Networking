@@ -23,12 +23,10 @@ The final challenge was to handle HTTP status codes. We spent some time to under
 Test Since we built our project from bottom to top, we tested the HTTP protocol working firstly.
 Then starting to handle parsing the response from server.
 
-## Work Separation
-In order to improving our coding quality, efficiency and fully understand the project,
-we worked together by peer coding. When Zhongxi write the "ClientMessage.py" and "CookieJar.py",
-Shiyu was sitting behind him to read and check. Then Shiyu start writting "ServerMessage.py",
-and Zhongxi helps a lot during the process. Moreover, we switched again for "MyCurl.py".
-And seperate the "Crawler.py" into two parts to work.
+## Installation
+* [Python 3]
+
+[Python 3]: <https://www.python.org/download/releases/3.0/>
 
 ## Run
 Execute Makefile
