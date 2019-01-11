@@ -1,11 +1,11 @@
-CDN
-Team Member: Zhongxi Wang, Shiyu Wang
+# CDN
+### Team Member: Zhongxi Wang, Shiyu Wang
 
-Approach
+## Approach
 This project includes two parts, HTTP and DNS.
 
 
-DNS:
+### DNS:
 In the DNS part, our high level approach is basically the same as the approach we took for Project 4.
 We create a class called DNS packet, this is the template we use to generate or parse DNS packets. The class dnsserver
 listens on a UDP port for incoming DNS requests. And it also does CDN's job to choose replica based on geolocation.
@@ -17,7 +17,7 @@ will then query the geolocation of this IP. Next time when this client visits ag
 and then we will return to it the IP of the closest EC2 server.
 
 --------------------------------------------------------------------------------------
-HTTP:
+### HTTP:
 
 For HTTP part, It basically need to do 5 things under different conditions:
 1. Accept and parse request from client
@@ -37,7 +37,7 @@ In order to avoid influencing the listening, we build this hash table in another
 On the other hand, we use fork() to handle concurrency of http part. Every new client will be put in a new child process
  to avoid long-time waiting.
 
-Challenge
+## Challenge
 We meet many challenges.
 Getting right with all the fields in DNS packet header is a little tricky.
 
@@ -48,15 +48,10 @@ unclosed child process, zombie files and other problems. Then we finally solved 
  signal library.
 Other problems like multithread and php files caching also happend, but we solved them too.
 
-Evaluation
+## Evaluation
 We evaluate our http part by wget http://[your server name]:[your port name]/[path to content]. With cache, the time of
 generating a http page is improved from 0.5s to 0.004s or less.
 
-Future Work
+## Future Work
 In the future, we would like to improve maping IPs to nearby replica servers based on both geolocation and active measurements.
 
-Work Seperation
-We separate our work into DNS and HTTP.
-Zhongxi is working on DNS part as well as CDN functions like maping IPs to nearby replica servers.
-Also Zhongxi finishes deploy|run|stop CDN scripts
-Shiyu is responsible for HTTP part and cache handling
