@@ -30,3 +30,5 @@ Shiyu was sitting behind him to read and check. Then Shiyu start writting "Serve
 and Zhongxi helps a lot during the process. Moreover, we switched again for "MyCurl.py".
 And seperate the "Crawler.py" into two parts to work.
 
+## Run
+Execute Makefile
